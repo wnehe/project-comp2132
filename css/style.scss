@@ -8,15 +8,15 @@ $beta: #71797a;
 $gamma: #e5d8d8;
 $red: #9a3737;
 $beige: #f4d6be;
-$button-color-main: #f5c795;
-$button-color-dark: #ed8065;
-$button-color-light: #eaf2c2;
-$key-color-main: #72b39b;
-$key-color-dark:#28624d;
-$key-color-light:#8e985b;
+$button_color_main: #f5c795;
+$button_color_dark: #ed8065;
+$button_color_light: #eaf2c2;
+$key_color_main: #72b39b;
+$key_color_dark:#28624d;
+$key_color_light:#8e985b;
 
-$main-font: "Dosis", sans-serif;
-$header-font: "Cabin Sketch", sans-serif;
+$main_font: "Dosis", sans-serif;
+$header_font: "Cabin Sketch", sans-serif;
 
 /**********html************/
 * {
@@ -26,7 +26,7 @@ $header-font: "Cabin Sketch", sans-serif;
 }
 
 html {
-    font-family: $main-font;
+    font-family: $main_font;
     font-size: 1.2em;
     background: url(../images/other/background.jpg) fixed center;
     background-size: cover;
@@ -52,7 +52,7 @@ header {
     flex-direction: column;
     justify-content: center;
     margin: 30px 15px;
-    font-family: $header-font;
+    font-family: $header_font;
     font-size: 1.4em;
     text-align: center;
     h1{
@@ -64,7 +64,7 @@ header a:hover{
 }
 
 button {
-    font-family: $main-font;
+    font-family: $main_font;
 }
 
 footer {
@@ -254,19 +254,19 @@ footer p{
     width: calc(100% / 7);
     margin: 2px;
     border-radius: 100%;
-    @include gradient-buttons($key-color-main, $key-color-dark, none, pointer);
+    @include gradient-buttons($key_color_main, $key_color_dark, none, pointer);
     color: $gamma;
 }
 .key:hover {
-    @include gradient-button-hover ($key-color-dark, $gamma);
+    @include gradient-button-hover ($key_color_dark, $gamma);
 }
 .key:active{
-    @include gradient-button-active (none, $key-color-dark, $key-color-main)
+    @include gradient-button-active (none, $key_color_dark, $key_color_main)
     
 }
 .key:disabled {
     box-shadow: none;
-    background-image: linear-gradient(to top, $key-color-dark, $key-color-dark);
+    background-image: linear-gradient(to top, $key_color_dark, $key_color_dark);
     text-shadow: none;
 }
 
@@ -274,19 +274,19 @@ footer p{
     display: block;
     max-width: fit-content;
     padding: 5px 13px 8px;
-    @include gradient-buttons($button-color-main, $button-color-dark, none, pointer);
+    @include gradient-buttons($button_color_main, $button_color_dark, none, pointer);
     font-weight: 600;
     border-radius: 20px;
-    box-shadow: 0px 1px 2px $button-color-dark;
+    box-shadow: 0px 1px 2px $button_color_dark;
     color: $alpha;
     transition-duration: .2s;
     font-size: 1em;
 }
 .again-button:hover{
-    @include gradient-button-hover ($button-color-dark, $alpha)
+    @include gradient-button-hover ($button_color_dark, $alpha)
 }
 .again-button:active{
-    @include gradient-button-active (none, $button-color-dark, $button-color-main)
+    @include gradient-button-active (none, $button_color_dark, $button_color_main)
 }
 
 /***************@media***************/
