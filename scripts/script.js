@@ -27,7 +27,7 @@ const hangshroom = document.getElementById('mushroom');
 const shroomRunPath = '../images/mushroom-animation-images/mushroom-'; 
 const hangshroomPath = '../images/shroom-cut-images/shroom-model-';
 const knife = document.getElementById('knife');
-const knifeAudio = new Audio('../audio/chop-sound-2.mp3');
+const knifeAudio = new Audio('../audio/chop-sound.mp3');
 const correctLetterAudio = new Audio('../audio/bubble-pop.mp3')
 // animation handlers and delay
 const limit = 6, delayAnimation = 100, delayScreen = 300, delayChop = 700;
