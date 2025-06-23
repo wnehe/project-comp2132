@@ -1,0 +1,17 @@
+// @author winnie he
+
+@mixin gradient-buttons ($main-color, $dark-color, $border, $cursor) {
+    background-image: linear-gradient(to top, $dark-color, $main-color, $main-color);
+    border: $border;
+    cursor: $cursor;
+}
+
+@mixin gradient-button-hover ($dark-color, $text-color) {
+    box-shadow: 0 1px 4px $dark-color;
+    text-shadow: 0 0 3px $text-color;
+}
+
+@mixin gradient-button-active ($box-shadow, $dark-color, $main-color) {
+    box-shadow: $box-shadow;
+    background-image: linear-gradient(to top, $dark-color, $main-color);
+}

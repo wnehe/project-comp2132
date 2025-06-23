@@ -1,0 +1,282 @@
+[
+  {
+    "scientific_name": "Prunus",
+    "name": "Plum"
+  },
+  {
+    "scientific_name": "Citrus x sinensis",
+    "name": "Orange"
+  },
+  {
+    "scientific_name": "Citrus x limon",
+    "name": "Lemon"
+  },
+  {
+    "scientific_name": "Hylocereus",
+    "name": "Dragonfruit"
+  },
+  {
+    "scientific_name": "Morchella",
+    "name": "Morel"
+  },
+  {
+    "scientific_name": "Citrus x paradisi",
+    "name": "Grapefruit"
+  },
+  {
+    "scientific_name": "Citrus x clementina",
+    "name": "Clementine"
+  },
+  {
+    "scientific_name": "Persea americana",
+    "name": "Avocado"
+  },
+  {
+    "scientific_name": "Eucalyptus",
+    "name": "Eucalyptus"
+  },
+  {
+    "scientific_name": "Salvia",
+    "name": "Sage"
+  },
+  {
+    "scientific_name": "Rosmarinus officinalis",
+    "name": "Rosemary"
+  },
+  {
+    "scientific_name": "Citrus maxima",
+    "name": "Pomelo"
+  },
+  {
+    "scientific_name": "Diospyros",
+    "name": "Persimmon"
+  },
+  {
+    "scientific_name": "Punica granatum",
+    "name": "Pomegranate"
+  },
+  {
+    "scientific_name": "Malus pumila",
+    "name": "Apple"
+  },
+  {
+    "scientific_name": "Pyrus",
+    "name": "Pear"
+  },
+  {
+    "scientific_name": "Vitis",
+    "name": "Grape"
+  },
+  {
+    "scientific_name": "Lavandula",
+    "name": "Lavender"
+  },
+  {
+    "scientific_name": "Eriobotrya japonica",
+    "name": "Loquat"
+  },
+  {
+    "scientific_name": "Citrus japonica",
+    "name": "Kumquat"
+  },
+  {
+    "scientific_name": "Citrus tangerina",
+    "name": "Tangerine"
+  },
+  {
+    "scientific_name": "Ficus carica",
+    "name": "Fig"
+  },
+  {
+    "scientific_name": "Citrus reticulata",
+    "name": "Mandarin"
+  },
+  {
+    "scientific_name": "Mangifera",
+    "name": "Mango"
+  },
+  {
+    "scientific_name": "Rheum rhabarbarum",
+    "name": "Rhubarb"
+  },
+  {
+    "scientific_name": "Citrus",
+    "name": "Lime"
+  },
+  {
+    "scientific_name": "Cucumis melo var. cantalupo",
+    "name": "Cantaloupe"
+  },
+  {
+    "scientific_name": "Rubus Fruitcosus",
+    "name": "Blackberry"
+  },
+  {
+    "scientific_name": "Cantharellus",
+    "name": "Chanterelle"
+  },
+  {
+    "scientific_name": "Basidiomycota",
+    "name": "Puffball"
+  },
+  {
+    "scientific_name": "Solanum melongena",
+    "name": "Eggplant"
+  },
+  {
+    "scientific_name": "Citrullus lanatus",
+    "name": "Watermelon"
+  },
+  {
+    "scientific_name": "Feijoa sellowiana",
+    "name": "Feijoa"
+  },
+  {
+    "scientific_name": "Brassica oleracea var. acephala",
+    "name": "Kale"
+  },
+  {
+    "scientific_name": "Prunus persica",
+    "name": "Peach"
+  },
+  {
+    "scientific_name": "Prunus persica var. nucipersica",
+    "name": "Nectarine"
+  },
+  {
+    "scientific_name": "Capsicum",
+    "name": "Pepper"
+  },
+  {
+    "scientific_name": "Olea europaea",
+    "name": "Olive"
+  },
+  {
+    "scientific_name": "Solanum lycopersicum",
+    "name": "Tomato"
+  },
+  {
+    "scientific_name": "Prunus",
+    "name": "Cherry"
+  },
+  {
+    "scientific_name": "Foeniculum vulgare",
+    "name": "Fennel"
+  },
+  {
+    "scientific_name": "Cucurbita",
+    "name": "Squash"
+  },
+  {
+    "scientific_name": "Tropaeolum",
+    "name": "Nasturtium"
+  },
+  {
+    "scientific_name": "Cucurbita",
+    "name": "Pumpkin"
+  },
+  {
+    "scientific_name": "Sambucus",
+    "name": "elderberry"
+  },
+  {
+    "scientific_name": "Musa",
+    "name": "Banana"
+  },
+  {
+    "scientific_name": "Psidium",
+    "name": "Guava"
+  },
+  {
+    "scientific_name": "Passiflora edulis",
+    "name": "Passionfruit"
+  },
+  {
+    "scientific_name": "Prunus armeniaca",
+    "name": "Apricot"
+  },
+  {
+    "scientific_name": "Actinidia",
+    "name": "Kiwi"
+  },
+  {
+    "scientific_name": "Vaccinium corymbosum",
+    "name": "Blueberry"
+  },
+  {
+    "scientific_name": "Fungi",
+    "name": "Mushroom"
+  },
+  {
+    "scientific_name": "Mentha",
+    "name": "Mint"
+  },
+  {
+    "scientific_name": "Fragaria",
+    "name": "Strawberry"
+  },
+  {
+    "scientific_name": "Durio",
+    "name": "Durian"
+  },
+  {
+    "scientific_name": "Plantago",
+    "name": "Plantain"
+  },
+  {
+    "scientific_name": "Litchi chinensis",
+    "name": "Lychee"
+  },
+  {
+    "scientific_name": "Ribes",
+    "name": "Currant"
+  },
+  {
+    "scientific_name": "Rubus idaeus",
+    "name": "Raspberry"
+  },
+  {
+    "scientific_name": "Ribes uva-crispa",
+    "name": "Gooseberry"
+  },
+  {
+    "scientific_name": "Nepeta cataria",
+    "name": "Catnip"
+  },
+  {
+    "scientific_name": "Allium",
+    "name": "Onion"
+  },
+  {
+    "scientific_name": "Thymus",
+    "name": "Thyme"
+  },
+  {
+    "scientific_name": "Origanum vulgare",
+    "name": "Oregano"
+  },
+  {
+    "scientific_name": "Allium sativum",
+    "name": "Garlic"
+  },
+  {
+    "scientific_name": "Ananas",
+    "name": "Pineapple"
+  },
+  {
+    "scientific_name": "Mentha spicata",
+    "name": "Spearmint"
+  },
+  {
+    "scientific_name": "Carica papaya",
+    "name": "Papaya"
+  },
+  {
+    "scientific_name": "Vaccinium oxycoccos",
+    "name": "Cranberry"
+  },
+  {
+    "scientific_name": "Rubus spectabilis",
+    "name": "Salmonberry"
+  }
+]

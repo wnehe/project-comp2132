@@ -1,0 +1,358 @@
+// @author winnie he
+
+@import 'style.mixin.scss';
+
+// variables
+$alpha: #2a0909;
+$beta: #71797a;
+$gamma: #e5d8d8;
+$red: #9a3737;
+$beige: #f4d6be;
+$button-color-main: #f5c795;
+$button-color-dark: #ed8065;
+$button-color-light: #eaf2c2;
+$key-color-main: #72b39b;
+$key-color-dark:#28624d;
+$key-color-light:#8e985b;
+
+$main-font: "Dosis", sans-serif;
+$header-font: "Cabin Sketch", sans-serif;
+
+/**********html************/
+* {
+    padding: 0;
+    margin: 0;
+    // border: $alpha solid 2px;
+}
+
+html {
+    font-family: $main-font;
+    font-size: 1.2em;
+    background: url(../images/other/background.jpg) fixed center;
+    background-size: cover;
+    color: $alpha;
+    transition: margin-top 1s ease-in-out;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+a, a:link, a:visited, a:active, a:focus, a:hover{
+    text-decoration: none;
+    color: $alpha;
+}
+a:hover{
+    text-shadow: 1px 0 0 $alpha;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px 15px;
+    font-family: $header-font;
+    font-size: 1.4em;
+    text-align: center;
+    h1{
+        color: $gamma;
+    }
+}
+header a:hover{
+    text-shadow: none;
+}
+
+button {
+    font-family: $main-font;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    margin: auto auto 30px;
+    text-align: center;
+    padding-top: 30px;
+}
+footer a:hover{
+    text-shadow: none;
+}
+footer p{
+    font-weight: 600;
+}
+
+/***************id***************/
+#container {
+    display: flex;
+    flex-direction: column;
+    max-width: 950px;
+    min-height: 100vh;
+    min-width: 300px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#mushroom-knife-wrap {
+    width: 300px;
+}
+
+#mushroom {
+    width: inherit;
+}
+
+#knife{
+    width: 200px;
+    position: absolute;
+    transform: translate(-96%, -36%);
+    rotate: -22deg;
+    z-index: 200;
+    opacity: 0;
+}
+#knife.cut{
+    opacity: 1;
+    rotate: -62deg;
+    transition: rotate 0.7s , opacity 0.2s ease-out;
+}
+
+#game-wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    max-width: 500px;
+}
+
+#game {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: fit-content;
+    min-height: 90px;
+}
+
+// ul
+#word{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;   
+    margin: 0 10px; 
+    // invsible letters w/ bottom border only
+    .letter{
+        font-size: 2em;
+        height: 40px;
+        width: 25px;
+        color: transparent;
+        border-bottom: 2px solid $alpha;
+    }
+}
+// show letters once guessed
+#word .letter.good{
+    color: $alpha;
+    border-color: transparent;
+}
+
+#guesses-plus-button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+#guess-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    color: $red;
+}
+
+#wrong-guess-div{
+    color: $red;
+}
+
+#keyboard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 530px;
+    justify-content: center;
+    align-self: center;
+    margin: 0 10px;
+}
+
+// semi transparent background wrap
+#animation-div{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($alpha, 0.75);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    // set opacity 0 OR diplay none, not both
+    opacity: 0; 
+    // move div up view
+    transform: translateY(-100%);
+    // inner wrap for actual content
+    #animation-content {
+        background-color: transparent;
+        max-width: 500px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: $beige;
+        text-align: center;
+        margin: 0 10px;
+    }
+    img{
+    max-width: 400px;
+    margin: 10px 0;
+    }
+    #lose{
+        border-radius: 30px;
+    }
+}
+
+#animation-div.show{
+    // slide div into view
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+/***************class***************/
+.section {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    gap: 15px;
+    margin: 10px;
+    padding: 20px 0;
+    align-items: center;
+    background: rgba(255, 255, 255, .75);
+    border-radius: 50px;
+    transition: margin-top 1s ease-in-out;
+    .text {
+        padding: 5px;
+        max-width: 500px;
+        text-align: center;
+        margin: 0 10px;
+    }
+}
+
+.key{
+    font-size: 1.2em;
+    padding: 7px;
+    width: calc(100% / 7);
+    margin: 2px;
+    border-radius: 100%;
+    @include gradient-buttons($key-color-main, $key-color-dark, none, pointer);
+    color: $gamma;
+}
+.key:hover {
+    @include gradient-button-hover ($key-color-dark, $gamma);
+}
+.key:active{
+    @include gradient-button-active (none, $key-color-dark, $key-color-main)
+    
+}
+.key:disabled {
+    box-shadow: none;
+    background-image: linear-gradient(to top, $key-color-dark);
+    text-shadow: none;
+}
+
+.again-button{
+    display: block;
+    max-width: fit-content;
+    padding: 5px 13px 8px;
+    @include gradient-buttons($button-color-main, $button-color-dark, none, pointer);
+    font-weight: 600;
+    border-radius: 20px;
+    box-shadow: 0px 1px 2px $button-color-dark;
+    color: $alpha;
+    transition-duration: .2s;
+    font-size: 1em;
+}
+.again-button:hover{
+    @include gradient-button-hover ($button-color-dark, $alpha)
+}
+.again-button:active{
+    @include gradient-button-active (none, $button-color-dark, $button-color-main)
+}
+
+/***************@media***************/
+
+@media (min-width: 450px) {
+
+    .key{
+        padding: 10px;
+        width: calc(100% / 9);
+    }
+
+    #guesses-plus-button{
+        flex-direction: row;
+    }
+}
+@media (min-height: 850px) and (min-width: 800px) {
+
+    header {
+        margin-top: 50px;
+    }
+    // center game to middle of screen
+    .section {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media (min-width: 800px) {
+
+    footer{
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    #mushroom-knife-wrap {
+        width: 350px;
+    }
+    #knife {
+        width: 215px;
+        transform: translate(-106%, -45%)
+    }
+
+    #game-wrap {
+        width: 350px;
+    }
+
+    #keyboard{
+        grid-area: 2/1/2/3;
+        max-width: fit-content;
+    }
+
+    .section {
+        padding: 30px 20px;
+        max-width: 750px;
+        display: grid;
+        grid-template-columns: auto auto; 
+        grid-template-rows: auto auto;
+        gap: 10px 0;
+    }
+
+    .key{
+        padding: 11px;
+        width: calc(100% / 14);
+        margin: 3px;
+    }
+}

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<!-- 
+author: Winnie He 
+date: June 25, 2025       
+-->
+    <head>
+        <title>Project | COMP2132</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Cabin+Sketch:wght@400;700&display=swap" rel="stylesheet">      
+        <link rel="stylesheet" href="../css/style.css">
+
+        <script src="../scripts/script.js" defer="defer"></script>
+    </head>
+
+    <body id="container">
+        <header>
+            <a href="../html/index.html"><h1 id="top">Hangman Project</h1></a>
+        </header>
+
+        <div id="animation-div">
+            <div id="animation-content">
+                <h2 id="game-over-statement"></h2>
+                <img id="game-over-media" 
+                    src="../images/mushroom-animation-images/mushroom-1.JPG" alt="mushroom-run">
+                <button class="again-button" id="again-pop">play again</button>
+            </div>
+        </div>
+
+        <main>
+            <section class="section" id="primary">
+                <div id="mushroom-knife-wrap">
+                    <img id="mushroom" 
+                        src="../images/shroom-cut-images/shroom-model-1.png" alt="mushroom-model">
+                    <img id="knife" 
+                        src="../images/other/knife.png" alt="cleaver">
+                </div>
+                
+                <div id="game-wrap">
+                    <div id="game">
+                        <ul id="word"></ul>
+                        <h3 id="hint" class="text">Hint:</h3>
+                    </div>
+
+                    <div id="guesses-plus-button">
+                        <div id="guess-div">
+                            <h3>Incorrect guesses: </h3>
+                            <h3 id="wrong-guess-num">0 / 6</h3>
+                        </div>       
+                        <button class="again-button" id="again-main"> play again</button>
+                    </div>
+                    
+                    <p class="text">Guess the name of the fruit or vegetable based on its scientific name to let the shroom run away. The shroom gets chopped for every wrong guess.</p>
+                </div>
+                
+                <div id="keyboard"></div>
+            </section>
+        </main>
+
+        <footer>
+            <a href="#top"><h3>COMP2132</h3></a> 
+            <p>Winnie He</p>
+            <p>June 25, 2025</p>
+        </footer>
+    </body>
+</html>
