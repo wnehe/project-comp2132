@@ -109,7 +109,7 @@ footer p {
 #game {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
   height: -moz-fit-content;
   height: fit-content;
   min-height: 90px;
@@ -250,7 +250,7 @@ footer p {
 
 .key:disabled {
   box-shadow: none;
-  background-image: linear-gradient(to top, #28624d);
+  background-image: linear-gradient(to top, #28624d, #28624d);
   text-shadow: none;
 }
 

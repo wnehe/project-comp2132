@@ -154,7 +154,7 @@ function clickedLetter(letter, key, board) {
  * lose game: change image 
  */
 function showWin() {
-    statement.innerText = 'You guessed the word correctly!!';
+    statement.innerText = `You guessed the word "${hiddenWord.join("")}" correctly!!`;
     displayEndGameScreen();
     winAudio.play();
 }

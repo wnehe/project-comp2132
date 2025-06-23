@@ -125,7 +125,7 @@ footer p{
 #game {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     height: fit-content;
     min-height: 90px;
 }
@@ -266,7 +266,7 @@ footer p{
 }
 .key:disabled {
     box-shadow: none;
-    background-image: linear-gradient(to top, $key-color-dark);
+    background-image: linear-gradient(to top, $key-color-dark, $key-color-dark);
     text-shadow: none;
 }
 
