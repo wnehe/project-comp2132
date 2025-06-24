@@ -14,6 +14,7 @@ $button_color_light: #eaf2c2;
 $key_color_main: #72b39b;
 $key_color_dark:#28624d;
 $key_color_light:#8e985b;
+$custom-cursor: url(https://cur.cursors-4u.net/nature/nat-9/nat853.png), auto !important;
 
 $main_font: "Dosis", sans-serif;
 $header_font: "Cabin Sketch", sans-serif;
@@ -28,7 +29,7 @@ $header_font: "Cabin Sketch", sans-serif;
 html {
     font-family: $main_font;
     font-size: 1.2em;
-    background: url(../images/other/background.jpg) fixed center;
+    background: url(../images/other/background.jpg) center;
     background-size: cover;
     color: $alpha;
     transition: margin-top 1s ease-in-out;
@@ -42,6 +43,7 @@ img {
 a, a:link, a:visited, a:active, a:focus, a:hover{
     text-decoration: none;
     color: $alpha;
+    cursor: $custom-cursor;
 }
 a:hover{
     text-shadow: 1px 0 0 $alpha;
@@ -93,17 +95,15 @@ footer p{
 }
 
 #mushroom-knife-wrap {
+    aspect-ratio: 1/1;
+}
+#mushroom {
     width: 300px;
 }
-
-#mushroom {
-    width: inherit;
-}
-
 #knife{
-    width: 200px;
+    width: 140px;
     position: absolute;
-    transform: translate(-96%, -36%);
+    transform: translate(-135%, -19%);
     rotate: -22deg;
     z-index: 200;
     opacity: 0;
@@ -127,7 +127,7 @@ footer p{
     flex-direction: column;
     gap: 20px;
     height: fit-content;
-    min-height: 90px;
+    min-height: 100px;
 }
 
 // ul
@@ -252,14 +252,15 @@ footer p{
 .key{
     font-size: 1.2em;
     padding: 7px;
-    width: calc(100% / 7);
+    width: 42px;
     margin: 2px;
     border-radius: 100%;
-    @include gradient-buttons($key_color_main, $key_color_dark, none, pointer);
+    @include gradient-buttons($key_color_main, $key_color_dark, none, $custom-cursor);
     color: $gamma;
+    font-weight: 600;
 }
 .key:hover {
-    @include gradient-button-hover ($key_color_dark, $gamma);
+    @include gradient-button-hover ($key_color_dark, $gamma, 3px);
 }
 .key:active{
     @include gradient-button-active (none, $key_color_dark, $key_color_main)
@@ -275,7 +276,7 @@ footer p{
     display: block;
     max-width: fit-content;
     padding: 5px 13px 8px;
-    @include gradient-buttons($button_color_main, $button_color_dark, none, pointer);
+    @include gradient-buttons($button_color_main, $button_color_dark, none, $custom-cursor);
     font-weight: 600;
     border-radius: 20px;
     box-shadow: 0px 1px 2px $button_color_dark;
@@ -284,7 +285,7 @@ footer p{
     font-size: 1em;
 }
 .again-button:hover{
-    @include gradient-button-hover ($button_color_dark, $alpha)
+    @include gradient-button-hover ($button_color_dark, $alpha, 2px)
 }
 .again-button:active{
     @include gradient-button-active (none, $button_color_dark, $button_color_main)
@@ -295,12 +296,14 @@ footer p{
 @media (min-width: 450px) {
 
     .key{
-        padding: 10px;
-        width: calc(100% / 9);
+        padding: 11px;
+        width: 50px;
     }
 
     #guesses-plus-button{
         flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;    
     }
 }
 @media (min-height: 850px) and (min-width: 800px) {
@@ -318,7 +321,7 @@ footer p{
     }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 820px) {
 
     footer{
         flex-direction: row;
@@ -326,34 +329,43 @@ footer p{
     }
 
     #mushroom-knife-wrap {
-        width: 350px;
-    }
-    #knife {
-        width: 215px;
-        transform: translate(-106%, -45%)
+        width: 100%;
     }
 
     #game-wrap {
-        width: 350px;
+        width: 100%;
     }
 
     #keyboard{
         grid-area: 2/1/2/3;
-        max-width: fit-content;
+        max-width: 700px;
+        margin: 0 auto;
     }
 
     .section {
         padding: 30px 20px;
         max-width: 750px;
         display: grid;
-        grid-template-columns: auto auto; 
+        grid-template-columns: 40% 60%; 
         grid-template-rows: auto auto;
         gap: 10px 0;
     }
 
     .key{
-        padding: 11px;
-        width: calc(100% / 14);
+        padding: 14px;
+        width: 56px;
         margin: 3px;
+    }
+}
+
+@media (min-width: 1080px) {
+    .section {
+        max-width: 800px;
+    }
+    #mushroom {
+        width: 320px;
+    }
+    #knife {
+        transform:translate(-149%, -13%);
     }
 }

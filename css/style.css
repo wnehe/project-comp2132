@@ -7,7 +7,7 @@
 html {
   font-family: "Dosis", sans-serif;
   font-size: 1.2em;
-  background: url(../images/other/background.jpg) fixed center;
+  background: url(../images/other/background.jpg) center;
   background-size: cover;
   color: #2a0909;
   transition: margin-top 1s ease-in-out;
@@ -21,6 +21,7 @@ img {
 a, a:link, a:visited, a:active, a:focus, a:hover {
   text-decoration: none;
   color: #2a0909;
+  cursor: url(https://cur.cursors-4u.net/nature/nat-9/nat853.png), auto !important;
 }
 
 a:hover {
@@ -76,17 +77,17 @@ footer p {
 }
 
 #mushroom-knife-wrap {
-  width: 300px;
+  aspect-ratio: 1/1;
 }
 
 #mushroom {
-  width: inherit;
+  width: 300px;
 }
 
 #knife {
-  width: 200px;
+  width: 140px;
   position: absolute;
-  transform: translate(-96%, -36%);
+  transform: translate(-135%, -19%);
   rotate: -22deg;
   z-index: 200;
   opacity: 0;
@@ -112,7 +113,7 @@ footer p {
   gap: 20px;
   height: -moz-fit-content;
   height: fit-content;
-  min-height: 90px;
+  min-height: 100px;
 }
 
 #word {
@@ -230,13 +231,14 @@ footer p {
 .key {
   font-size: 1.2em;
   padding: 7px;
-  width: 14.2857142857%;
+  width: 42px;
   margin: 2px;
   border-radius: 100%;
   background-image: linear-gradient(to top, #28624d, #72b39b, #72b39b);
   border: none;
-  cursor: pointer;
+  cursor: url(https://cur.cursors-4u.net/nature/nat-9/nat853.png), auto !important;
   color: #e5d8d8;
+  font-weight: 600;
 }
 
 .key:hover {
@@ -262,7 +264,7 @@ footer p {
   padding: 5px 13px 8px;
   background-image: linear-gradient(to top, #ed8065, #f5c795, #f5c795);
   border: none;
-  cursor: pointer;
+  cursor: url(https://cur.cursors-4u.net/nature/nat-9/nat853.png), auto !important;
   font-weight: 600;
   border-radius: 20px;
   box-shadow: 0px 1px 2px #ed8065;
@@ -273,7 +275,7 @@ footer p {
 
 .again-button:hover {
   box-shadow: 0 1px 4px #ed8065;
-  text-shadow: 0 0 3px #2a0909;
+  text-shadow: 0 0 2px #2a0909;
 }
 
 .again-button:active {
@@ -284,11 +286,13 @@ footer p {
 /***************@media***************/
 @media (min-width: 450px) {
   .key {
-    padding: 10px;
-    width: 11.1111111111%;
+    padding: 11px;
+    width: 50px;
   }
   #guesses-plus-button {
     flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
   }
 }
 @media (min-height: 850px) and (min-width: 800px) {
@@ -303,37 +307,44 @@ footer p {
     transform: translate(-50%, -50%);
   }
 }
-@media (min-width: 800px) {
+@media (min-width: 820px) {
   footer {
     flex-direction: row;
     gap: 15px;
   }
   #mushroom-knife-wrap {
-    width: 350px;
-  }
-  #knife {
-    width: 215px;
-    transform: translate(-106%, -45%);
+    width: 100%;
   }
   #game-wrap {
-    width: 350px;
+    width: 100%;
   }
   #keyboard {
     grid-area: 2/1/2/3;
-    max-width: -moz-fit-content;
-    max-width: fit-content;
+    max-width: 700px;
+    margin: 0 auto;
   }
   .section {
     padding: 30px 20px;
     max-width: 750px;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 40% 60%;
     grid-template-rows: auto auto;
     gap: 10px 0;
   }
   .key {
-    padding: 11px;
-    width: 7.1428571429%;
+    padding: 14px;
+    width: 56px;
     margin: 3px;
+  }
+}
+@media (min-width: 1080px) {
+  .section {
+    max-width: 800px;
+  }
+  #mushroom {
+    width: 320px;
+  }
+  #knife {
+    transform: translate(-149%, -13%);
   }
 }
