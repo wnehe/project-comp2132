@@ -184,7 +184,7 @@ footer p{
     margin: 0 10px;
 }
 
-// semi transparent background wrap
+// semi-transparent background end game screen
 #animation-div{
     position: fixed;
     width: 100%;
@@ -195,10 +195,11 @@ footer p{
     align-items: center;
     justify-content: center;
     z-index: 999;
-    // set opacity 0 OR diplay none, not both
+    // set opacity 0 OR display none, not both
     opacity: 0; 
     // move div up view
     transform: translateY(-100%);
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
     // inner wrap for actual content
     #animation-content {
         background-color: transparent;

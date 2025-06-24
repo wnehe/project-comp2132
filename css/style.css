@@ -179,6 +179,7 @@ footer p {
   z-index: 999;
   opacity: 0;
   transform: translateY(-100%);
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
 }
 #animation-div #animation-content {
   background-color: transparent;
