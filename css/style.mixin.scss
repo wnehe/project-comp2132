@@ -6,9 +6,9 @@
     cursor: $cursor;
 }
 
-@mixin gradient-button-hover ($dark-color, $text-color) {
+@mixin gradient-button-hover ($dark-color, $text-color, $shadow) {
     box-shadow: 0 1px 4px $dark-color;
-    text-shadow: 0 0 3px $text-color;
+    text-shadow: 0 0 $shadow $text-color;
 }
 
 @mixin gradient-button-active ($box-shadow, $dark-color, $main-color) {
