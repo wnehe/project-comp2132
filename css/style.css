@@ -192,11 +192,10 @@ footer p {
   justify-content: center;
   color: #f4d6be;
   text-align: center;
-  margin: 0 10px;
 }
 #animation-div img {
   max-width: 400px;
-  margin: 10px 0;
+  margin: 20px 0;
 }
 #animation-div #lose {
   border-radius: 30px;
