@@ -16,7 +16,7 @@ let err = 0;
 let produce = [];
 // variables to assign to json properties
 let gameWord = '', gameHint = ''; 
-// animations at game end
+// game end screen + animation
 const endGameScreen = document.getElementById('animation-div')
 const endGameMedia = document.getElementById("game-over-media");
 const statement = document.getElementById('game-over-statement');
@@ -58,7 +58,7 @@ function fileFirst() {
 
 /**
  * STEP 2 do math to get random word from array 
- * add random word to DOM
+ * + add random word to DOM
  * @param {Array} produce - array from json elements
  */
 function getRandomWordFromArray(produce) {
@@ -80,7 +80,7 @@ function getRandomWordFromArray(produce) {
 }
 
 /**
- * STEP 3 keyboard class gets letters 
+ * STEP 3 keyboard class builds keyboard
  * + calls clickedLetter() fx
  */
 class Keyboard {
@@ -122,7 +122,7 @@ function clickedLetter(letter, key, board) {
                 // disable keyboard if all letters found
                 if (hiddenWord.length == word.querySelectorAll('.good').length) {
                     board.querySelectorAll('.key').forEach(k => k.disabled = true)
-                    // call fx
+                    // call win fx
                     showWin();
                     // animate
                     if (!running) {
@@ -140,7 +140,7 @@ function clickedLetter(letter, key, board) {
             err = maxErr;
             // disable keyb when max errors reached
             board.querySelectorAll('.key').forEach(k => k.disabled = true)
-            // call fx
+            // call lose fx
             showLose();
         }
     }  
@@ -221,9 +221,9 @@ function again(){
     hint.innerText = '';
     // reset wrong guesses count
     errCount.innerText = `${err} / ${maxErr}`;
-    // reset hangman image
+    // reset hangman to image 1
     hangshroom.src = `${hangshroomPath}${err+1}.png`
-    // end game displays
+    // end game display
     endGameScreen.classList.remove('show')
     knife.classList.remove('cut');
     // pause and reset audios 
