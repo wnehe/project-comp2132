@@ -12,7 +12,7 @@
     "name": "Lemon"
   },
   {
-    "scientific_name": "Hylocereus",
+    "scientific_name": "Selenicereus undatus",
     "name": "Dragonfruit"
   },
   {
@@ -40,10 +40,6 @@
     "name": "Avocado"
   },
   {
-    "scientific_name": "Eucalyptus",
-    "name": "Eucalyptus"
-  },
-  {
     "scientific_name": "Salvia officinalis",
     "name": "Sage"
   },
@@ -56,7 +52,7 @@
     "name": "Pomelo"
   },
   {
-    "scientific_name": "Diospyros",
+    "scientific_name": "Diospyros virginiana",
     "name": "Persimmon"
   },
   {
@@ -68,7 +64,7 @@
     "name": "Apple"
   },
   {
-    "scientific_name": "Pyrus",
+    "scientific_name": "Pyrus communis",
     "name": "Pear"
   },
   {
@@ -100,7 +96,7 @@
     "name": "Mandarin"
   },
   {
-    "scientific_name": "Mangifera",
+    "scientific_name": "Mangifera indica",
     "name": "Mango"
   },
   {
@@ -112,7 +108,7 @@
     "name": "Rhubarb"
   },
   {
-    "scientific_name": "Citrus",
+    "scientific_name": "Citrus x aurantiifolia",
     "name": "Lime"
   },
   {
@@ -192,10 +188,6 @@
     "name": "Fennel"
   },
   {
-    "scientific_name": "Cucurbita",
-    "name": "Squash"
-  },
-  {
     "scientific_name": "Nasturtium officinale",
     "name": "watercress"
   },
@@ -208,7 +200,7 @@
     "name": "pioppino"
   },
   {
-    "scientific_name": "Cucurbita",
+    "scientific_name": "Cucurbita peop",
     "name": "Pumpkin"
   },
   {
@@ -232,7 +224,7 @@
     "name": "Apricot"
   },
   {
-    "scientific_name": "Actinidia",
+    "scientific_name": "Actinidia deliciosa",
     "name": "Kiwi"
   },
   {
@@ -260,7 +252,7 @@
     "name": "Mint"
   },
   {
-    "scientific_name": "Fragaria",
+    "scientific_name": "Fragaria × ananassa",
     "name": "Strawberry"
   },
   {
@@ -268,7 +260,7 @@
     "name": "Durian"
   },
   {
-    "scientific_name": "Plantago",
+    "scientific_name": "Musa × paradisiaca",
     "name": "Plantain"
   },
   {
@@ -284,8 +276,12 @@
     "name": "cilantro"
   },
   {
-    "scientific_name": "Ribes",
-    "name": "Currant"
+    "scientific_name": "Ribes nigrum",
+    "name": "blackcurrant"
+  },
+  {
+    "scientific_name": "Ribes rubrum",
+    "name": "redcurrant"
   },
   {
     "scientific_name": "Rubus idaeus",
@@ -324,7 +320,7 @@
     "name": "Garlic"
   },
   {
-    "scientific_name": "Ananas",
+    "scientific_name": "Ananas comosus",
     "name": "Pineapple"
   },
   {
