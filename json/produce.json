@@ -1,6 +1,6 @@
 [
   {
-    "scientific_name": "Prunus",
+    "scientific_name": "Prunus domestica",
     "name": "Plum"
   },
   {
@@ -24,6 +24,14 @@
     "name": "Grapefruit"
   },
   {
+    "scientific_name": "Petroselinum Crispum",
+    "name": "parsley"
+  },
+  {
+    "scientific_name": "Anethum Graveolens",
+    "name": "dill"
+  },
+  {
     "scientific_name": "Citrus x clementina",
     "name": "Clementine"
   },
@@ -36,7 +44,7 @@
     "name": "Eucalyptus"
   },
   {
-    "scientific_name": "Salvia",
+    "scientific_name": "Salvia officinalis",
     "name": "Sage"
   },
   {
@@ -64,7 +72,7 @@
     "name": "Pear"
   },
   {
-    "scientific_name": "Vitis",
+    "scientific_name": "Vitis vinifera",
     "name": "Grape"
   },
   {
@@ -96,6 +104,10 @@
     "name": "Mango"
   },
   {
+    "scientific_name": "Garcinia mangostana",
+    "name": "Mangosteen"
+  },
+  {
     "scientific_name": "Rheum rhabarbarum",
     "name": "Rhubarb"
   },
@@ -106,6 +118,10 @@
   {
     "scientific_name": "Cucumis melo var. cantalupo",
     "name": "Cantaloupe"
+  },
+  {
+    "scientific_name": "Cucumis melo var. inordorus",
+    "name": "Honeydew"
   },
   {
     "scientific_name": "Rubus Fruitcosus",
@@ -120,9 +136,17 @@
     "name": "Puffball"
   },
   {
+    "scientific_name": "Ocimum Basilicum",
+    "name": "basil"
+  },
+  {
     "scientific_name": "Solanum melongena",
     "name": "Eggplant"
   },
+  {
+    "scientific_name": "Dimocarpus longan",
+    "name": "Longan"
+  },  
   {
     "scientific_name": "Citrullus lanatus",
     "name": "Watermelon"
@@ -156,7 +180,11 @@
     "name": "Tomato"
   },
   {
-    "scientific_name": "Prunus",
+    "scientific_name": "Annona muricata",
+    "name": "Soursop"
+  },
+  {
+    "scientific_name": "Prunus avium",
     "name": "Cherry"
   },
   {
@@ -168,8 +196,16 @@
     "name": "Squash"
   },
   {
-    "scientific_name": "Tropaeolum",
-    "name": "Nasturtium"
+    "scientific_name": "Nasturtium officinale",
+    "name": "watercress"
+  },
+  {
+    "scientific_name": "Flammulina filiformis",
+    "name": "enoki"
+  },
+  {
+    "scientific_name": "Cyclocybe aegerita",
+    "name": "pioppino"
   },
   {
     "scientific_name": "Cucurbita",
@@ -200,12 +236,24 @@
     "name": "Kiwi"
   },
   {
+    "scientific_name": "Boletus edulis",
+    "name": "porcini"
+  },
+  {
+    "scientific_name": "Amanita rubescens",
+    "name": "blusher"
+  },
+  {
     "scientific_name": "Vaccinium corymbosum",
     "name": "Blueberry"
   },
   {
-    "scientific_name": "Fungi",
-    "name": "Mushroom"
+    "scientific_name": "Agaricus bisporus",
+    "name": "portobello"
+  },
+  {
+    "scientific_name": "Lentinula edodes",
+    "name": "shiitake"
   },
   {
     "scientific_name": "Mentha",
@@ -228,6 +276,14 @@
     "name": "Lychee"
   },
   {
+    "scientific_name": "Allium schoenoprasum",
+    "name": "chives"
+  },
+  {
+    "scientific_name": "Coriandrum sativum",
+    "name": "cilantro"
+  },
+  {
     "scientific_name": "Ribes",
     "name": "Currant"
   },
@@ -244,7 +300,7 @@
     "name": "Catnip"
   },
   {
-    "scientific_name": "Allium",
+    "scientific_name": "Allium sepa",
     "name": "Onion"
   },
   {
@@ -254,6 +310,14 @@
   {
     "scientific_name": "Origanum vulgare",
     "name": "Oregano"
+  },
+  {
+    "scientific_name": "Panax spec.",
+    "name": "ginseng"
+  },
+  {
+    "scientific_name": "Zingiber officinale",
+    "name": "ginger"
   },
   {
     "scientific_name": "Allium sativum",
