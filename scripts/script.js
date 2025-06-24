@@ -159,7 +159,7 @@ function showWin() {
     winAudio.play();
 }
 function showLose() {
-    statement.innerText = `Game Over! The correct word was: ${hiddenWord.join("")}`
+    statement.innerText = `Game Over! The correct word was "${hiddenWord.join("")}"`
     endGameMedia.src = '../images/other/game-over-1.gif'
     endGameMedia.style.borderRadius = '20px'
     displayEndGameScreen();
